@@ -36,4 +36,5 @@ nix develop
 | Project                         | Description            |
 | ---------------------------     | ------------------     |
 | [**minimal**](projects/minimal) | **minimal CI project** |
+| [scala](projects/scala)         | scala CI project       |
 
