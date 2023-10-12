@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        deno: [0.32.0, 0.31.0, 0.30.0]
+        deno: [1.37.0, 1.36.0, 1.35.0]
     name: Test with Deno ${{ matrix.deno }}
 
     steps:
