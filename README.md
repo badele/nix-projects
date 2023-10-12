@@ -33,9 +33,9 @@ nix develop
 
 ### Project
 
-| Project                         | Description            |
-| ---------------------------     | ------------------     |
-| [deno](projects/deno)           | deno CI project        |
-| [**minimal**](projects/minimal) | **minimal CI project** |
-| [scala](projects/scala)         | scala CI project       |
-
+| Project                              | Description              |
+| -                                    | -                        |
+| [deno](projects/deno)                | deno project + CI        |
+| [deno-module](/projects/deno-module) | deno module project + CI |
+| [**minimal**](projects/minimal)      | **minimal project + CI** |
+| [scala](projects/scala)              | scala project + CI       |

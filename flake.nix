@@ -24,6 +24,14 @@
             path = ./projects/minimal;
             description = "minimal project";
           };
+          deno = {
+            path = ./projects/deno;
+            description = "deno project";
+          };
+          deno-module = {
+            path = ./projects/deno-module;
+            description = "deno project";
+          };
           minimal = {
             path = ./projects/minimal;
             description = "minimal project";
@@ -31,10 +39,6 @@
           scala = {
             path = ./projects/scala;
             description = "scala project";
-          };
-          deno = {
-            path = ./projects/deno;
-            description = "deno project";
           };
         };
     };
