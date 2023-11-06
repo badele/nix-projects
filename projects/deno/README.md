@@ -3,8 +3,8 @@
 ## TODO {{REPOSITORY}} project initialisation
 
 - Enable **Read and write permissions** on the
-[Github action workflow permission](https://{{REMOTE}}/{{OWNER}}/{{REPOSITORY}}/settings/actions)
-(for pushing the release and changelog)
+  [Github action workflow permission](https://{{REMOTE}}/{{OWNER}}/{{REPOSITORY}}/settings/actions)
+  (for pushing the release and changelog)
 
 ## Included with this project
 
