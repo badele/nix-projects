@@ -2,8 +2,8 @@
 
 ## TODO {{REPOSITORY}} project initialisation
 
-Enable **Read and write permissions** on the [Github action workflow permission](
-<https://{{REMOTE}}/{{OWNER}}/{{REPOSITORY}}/settings/actions>)
+Enable **Read and write permissions** on the
+[Github action workflow permission](https://{{REMOTE}}/{{OWNER}}/{{REPOSITORY}}/settings/actions)
 (for pushing the release and changelog)
 
 ## Included with this project
@@ -25,5 +25,5 @@ Enable **Read and write permissions** on the [Github action workflow permission]
     - lint
     - test
     - coverage
-  - Manually releasing a new version [release action](
-<https://{{REMOTE}}/{{OWNER}}/{{REPOSITORY}}/actions/workflows/Release.yml>)
+  - Manually releasing a new version
+    [release action](https://{{REMOTE}}/{{OWNER}}/{{REPOSITORY}}/actions/workflows/Release.yml)

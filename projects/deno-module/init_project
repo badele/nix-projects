@@ -11,8 +11,8 @@ sed -i "s/{{REPOSITORY}}/${REPOSITORY}/g" $1
 ###############################################################################
 
 echo "https://github.com/badele/nix-projects"
-echo "           |         |          |"
-echo "         REMOTE    OWNER    REPOSITORY"
+echo "           |         |       |"
+echo "         REMOTE    OWNER REPOSITORY"
 echo ""
 
 echo -n "Remote : "
