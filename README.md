@@ -31,6 +31,16 @@ sh init_project
 nix develop
 ```
 
+### Debug locally template
+```shell
+cd .. && rm -rf test
+nix flake new -t "git+file:///home/badele/ghq/github.com/badele/nix-projects#deno" test
+cd test; sh init_project
+git remote add origin git@github.com:badele/test.git
+git commit -m 'feat: init project'
+git push -u origin main --force
+```
+
 ### Project
 
 | Project                              | Description              |
