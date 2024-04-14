@@ -12,7 +12,7 @@ Set Height 680
 # Init project
 ###############################################################################
 
-Type "cd /tmp ; nix flake new -t "github:badele/nix-projects#hugo-geekdoc" devops.jesuislibre.org" Sleep 500ms  Enter
+Type "cd /tmp ; nix flake new -t 'github:badele/nix-projects#hugo-geekdoc' devops.jesuislibre.org" Sleep 500ms  Enter
 
 Type "cd /tmp/devops.jesuislibre.org" Sleep 500ms  Enter
 
