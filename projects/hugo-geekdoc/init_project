@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+replace_content() {
+	sed -i "s|{{REMOTE}}|${REMOTE}|g" $1
+	sed -i "s|{{OWNER}}|${OWNER}|g" $1
+	sed -i "s|{{REPOSITORY}}|${REPOSITORY}|g" $1
+	sed -i "s|{{WEBSITEURL}}|${WEBSITEURL}|g" $1
+	sed -i "s|{{WEBSITETITLE}}|${WEBSITETITLE}|g" $1
+}
+
+###############################################################################
+# Inputs
+###############################################################################
+
+PROJECTNAME="$(basename $(pwd))"
+
+gum style \
+	--border normal \
+	--margin "1" \
+	--padding "1 2" \
+	--border-foreground 212 \
+	"Initialisation $(gum style --foreground 212 $PROJECTNAME) project"
+
+REMOTE=$(gum input --placeholder "Remote git address (ex: github.com)")
+echo "Remote        : " $(gum style --foreground 212 "$REMOTE")
+
+OWNER=$(gum input --placeholder "Owner git repository (ex: badele for github.com/badele)")
+echo "Owner         : " $(gum style --foreground 212 "$OWNER")
+
+REPOSITORY=$(gum input --placeholder "Git Project name (ex: nix-projects for github.com/badele/nix-projects)")
+echo "Repository    : " $(gum style --foreground 212 "https://${REMOTE}/${OWNER}/$REPOSITORY")
+
+WEBSITEURL=$(gum input --placeholder "Website URL (ex: https://mydocs.website.com)")
+echo "Website URL   : " $(gum style --foreground 212 "$WEBSITEURL")
+
+WEBSITETITLE=$(gum input --placeholder "Website title (ex: My docs)")
+echo "Website title : " $(gum style --foreground 212 "$WEBSITETITLE")
+
+###############################################################################
+# Replacements
+###############################################################################
+replace_content README.md
+replace_content hugo.yaml
+replace_content flake.nix
+
+chmod +x updatedoc.ts
+just doc-update .
+
+rm init_project
+
+# Add template file to new project
+git init -b main && git add -A
+
+echo ""
+echo "========================================================================"
+echo "= Manual steps"
+echo "========================================================================"
+echo ""
+
+echo "test documentation hugo project with" $(gum style --foreground 212 "just hugo-serve") "command"
+echo ""
+echo "Push your project with below commands :"
+gum style --foreground 212 "git remote add origin git@${REMOTE}:${OWNER}/${REPOSITORY}.git"
+gum style --foreground 212 "git commit -m 'feat: init project'"
+gum style --foreground 212 "git push -u origin main"

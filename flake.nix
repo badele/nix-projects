@@ -28,6 +28,10 @@
             path = ./projects/deno;
             description = "deno project";
           };
+          hugo-geekdoc = {
+            path = ./projects/hugo-geekdoc;
+            description = "Hugo geekdoc project";
+          };
           deno-module = {
             path = ./projects/deno-module;
             description = "deno project";
