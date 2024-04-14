@@ -1,0 +1,11 @@
+.decrypted*.yml
+
+# Project
+docs/nvim/tags
+
+# direnv
+.direnv
+
+# Devenv
+.devenv*
+devenv.local.nix

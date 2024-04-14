@@ -2,7 +2,8 @@
 
 ## Nix installation
 
-Before using this project and if you not have the Nix/NixOS, your must install it
+Before using this project and if you not have the Nix/NixOS, your must install
+it
 
 Below command install `nix` and `flake` tool
 
@@ -15,23 +16,25 @@ grep 'experimental-features' /etc/nix/nix.conf || (echo 'experimental-features =
 sh <(curl -L https://nixos.org/nix/install)
 grep 'experimental-features' /etc/nix/nix.conf || (echo 'experimental-features = nix-command flakes' >> /etc/nix/nix.conf)
 ```
+
 ## Project initialisation
 
 ### Github
 
-- From github website, create repository (without enabled
-"Initialize this repository with")
-- Enable **Read and write permissions** on the [Workflow permission section](
-<https://github.com/badele/test/settings/actions>)
+- From github website, create repository (without enabled "Initialize this
+  repository with")
+- Enable **Read and write permissions** on the
+  [Workflow permission section](https://github.com/badele/test/settings/actions)
 
 ```shell
 nix flake new -t "github:badele/nix-projects#minimal" your-project-name
 cd your-project-name
-sh init_project
 nix develop
+sh init_project
 ```
 
 ### Debug locally template
+
 ```shell
 cd .. && rm -rf test
 nix flake new -t "git+file:///home/badele/ghq/github.com/badele/nix-projects#deno" test
@@ -43,9 +46,10 @@ git push -u origin main --force
 
 ### Project
 
-| Project                              | Description              |
-| -                                    | -                        |
-| [deno](projects/deno)                | deno project + CI        |
-| [deno-module](/projects/deno-module) | deno module project + CI |
-| [**minimal**](projects/minimal)      | **minimal project + CI** |
-| [scala](projects/scala)              | scala project + CI       |
+| Project                                | Description              |
+| -------------------------------------- | ------------------------ |
+| [deno](projects/deno)                  | deno project + CI        |
+| [deno-module](/projects/deno-module)   | deno module project + CI |
+| [hugo-geekdoc](/projects/hugo-geekdoc) | hugo geekdoc + CI        |
+| [**minimal**](projects/minimal)        | **minimal project + CI** |
+| [scala](projects/scala)                | scala project + CI       |
