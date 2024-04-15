@@ -29,6 +29,13 @@ inherit the following features:
 But above all thanks to hugo, it is possible to have a documentation site
 statistics (no need for `PHP` or `Node.js` server)
 
+## Example of use
+
+Here is an example of using this template for the site
+[JSL Devops documentation](https://devops.jesuislibre.org)
+
+{{< img name="demo-geekdoc" size=origin lazy=false >}}
+
 ## Install
 
 Installing `Geekdoc` will use the trio
@@ -49,10 +56,3 @@ cd geekdoc
 nix develop
 sh init_project
 ```
-
-## Example of use
-
-Here is an example of using this template for the site
-[JSL Devops documentation](https://devops.jesuislibre.org)
-
-{{< img name="demo-geekdoc" size=origin lazy=false >}}

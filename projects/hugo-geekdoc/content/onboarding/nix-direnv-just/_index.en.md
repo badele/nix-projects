@@ -1,9 +1,11 @@
 ---
 title: Nix, Direnv, Just, the trio that makes life easier
+tags:
+  - OnboardingReady
 resources:
-  - name: demo-jsl-devops
-    src: demo-jsl-devops.gif
-    title: "JSL Devops demo"
+  - name: demo-onboarding
+    src: demo-onboarding.gif
+    title: "JSL Devops onboarding demo"
     params:
       credits: "Onboarding for the devops.jesuislibre.org project"
 ---
@@ -47,6 +49,17 @@ That's why I use the trio:
 - **Nix:** Enables obtaining a reproducible system.
 - **Direnv:** Allows executing a command upon entering a directory.
 - **Just:** Provides a command runner and help display.
+
+## Example of use
+
+Here is an example of use for the documentation project of
+[JSL Devops](https://devops.jesuislibre.org)
+
+At first, you will notice that the `just` and `hugo` tools are not available in
+the user's distribution. However, without intervention on his part, you will
+find that they become available thanks to `Nix` and the `flake.nix` file.
+
+{{< img name="demo-onboarding" size=origin lazy=false >}}
 
 ## Installation
 
@@ -260,14 +273,3 @@ precommit-install:
 @packages:
     echo $PATH | tr ":" "\n" | grep -E "/nix/store" | sed -e "s/\/nix\/store\/[a-z0-9]\+\-//g" | sed -e "s/\/.*//g"
 ```
-
-## Example of use
-
-Here is an example of use for the documentation project of
-[JSL Devops](https://devops.jesuislibre.org)
-
-At first, you will notice that the just and hugo tools are not available in the
-user's distribution. However, without intervention on his part, you will find
-that they become available thanks to `Nix` and the `flake.nix` file.
-
-{{< img name="demo-jsl-devops" size=origin lazy=false >}}

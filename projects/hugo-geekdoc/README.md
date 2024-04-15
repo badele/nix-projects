@@ -42,4 +42,19 @@ Enable **Read and write permissions** on the
 ## Project commands
 
 <!-- COMMANDS -->
+
+```text
+Available recipes:
+    help                       Help it showed if just is called without arguments
+    precommit-install          Setup pre-commit
+    precommit-update           Update pre-commit
+    precommit-check            precommit check
+    hugo-init                  Init hugo documentation site
+    hugo-serve
+    doc-update FAKEFILENAME    Update documentation
+    lint                       Lint the project
+    repl                       Repl the project
+    packages                   Show installed packages
+```
+
 <!-- /COMMANDS -->

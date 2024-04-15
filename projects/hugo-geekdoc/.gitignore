@@ -1,11 +1,4 @@
-.decrypted*.yml
-
-# Project
-docs/nvim/tags
+public
 
 # direnv
 .direnv
-
-# Devenv
-.devenv*
-devenv.local.nix

@@ -1,5 +1,5 @@
 ---
-title: Welcome to JSL Devops
+title: Welcome
 ---
 
 During our DevOps journey, we have used a multitude tools and infrastructure,

@@ -29,6 +29,13 @@ qui lui permet hériter des features suivantes :
 Mais surtout grace à hugo, il est possible d'avoir un site de documentation
 statisque (pas besoin de serveur `PHP` ou `Node.js`)
 
+## Exemple d'utilisation
+
+Voici un exemple d'utilisation de ce template pour le site
+[JSL Devops documentation](https://devops.jesuislibre.org)
+
+{{< img name="demo-geekdoc" size=origin lazy=false >}}
+
 ## Installation
 
 L'installation de `Geekdoc` utilisera le trio
@@ -49,10 +56,3 @@ cd geekdoc
 nix develop
 sh init_project
 ```
-
-## Exemple d'utilisation
-
-Voici un exemple d'utilisation de ce template pour le site
-[JSL Devops documentation](https://devops.jesuislibre.org)
-
-{{< img name="demo-geekdoc" size=origin lazy=false >}}

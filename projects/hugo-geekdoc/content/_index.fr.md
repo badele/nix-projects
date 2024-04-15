@@ -1,5 +1,5 @@
 ---
-title: Bienvenue sur JSL Devops 
+title: Bienvenue 
 ---
 
 Au cours de notre parcours en tant que DevOps, nous avons utilisé une multitude
